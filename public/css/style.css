@@ -1,0 +1,72 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+/*top background*/
+.intro-header {
+    padding-top: 70px; 
+    padding-bottom: 50px;
+    text-align: center;
+    background: url('http://i1.wp.com/bartenderhq.com/wp-content/uploads/2015/01/The-Simpsons-moes.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 40%;
+}
+
+.vcenter {
+    position: relative;
+    padding-top: 20px;
+}
+
+/*Header*/
+.intro-message > h1 {
+    margin-top: -50px;
+    text-shadow: 2px 1px 2px #000;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*small header*/
+.intro-message > h3 {
+  color: black;
+}
+
+/*line*/
+hr.intro-divider {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  width: 100%;
+}
+
+/* Body content */
+.body-content {
+    text-align: center;
+    height: 58%;
+}
+
+
+/*footer*/
+footer {
+    padding: 1px 0;
+    background: rgba(200, 192, 192, 0.9);
+    height: 30px;
+}
+
+img.transparent {
+    opacity: 0.4;
+}
+img.transparent:hover {
+    opacity: 1;
+}

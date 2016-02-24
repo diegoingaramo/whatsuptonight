@@ -11,16 +11,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: cursive;
     font-weight: 700;
 }
 
 /*top background*/
 .intro-header {
-    padding-top: 70px; 
+    padding-top: 50px; 
     padding-bottom: 50px;
     text-align: center;
-    background: url('http://i1.wp.com/bartenderhq.com/wp-content/uploads/2015/01/The-Simpsons-moes.jpg') no-repeat center center fixed;
+    background: url('../images/The-Simpsons-moes_2.png') no-repeat center center fixed;
     background-size: cover;
     height: 40%;
 }
@@ -32,15 +32,15 @@ h6 {
 
 /*Header*/
 .intro-message > h1 {
-    margin-top: -50px;
+    margin-top: -60px;
     text-shadow: 2px 1px 2px #000;
     font-size: 5em;
-    color: rgba(255, 255, 255, 0.7);
+    color: #FED815;
 }
 
 /*small header*/
-.intro-message > h3 {
-  color: black;
+h3 {
+  color: #F08310;
 }
 
 /*line*/
@@ -56,6 +56,37 @@ hr.intro-divider {
     height: 58%;
 }
 
+.text-search {
+    text-align: left;
+    border-radius: 10px;
+    border: 2px solid #C67716 !important;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #3A3A3A
+}
+
+.button-search {
+    border: 2px solid #C67716 !important;
+    font-size: 20px;
+    color: #3A3A3A
+}
+
+.container-search {
+    position: relative;
+    margin-top: 0px;
+}
+
+.subt-container{
+    position: relative;
+    margin-top: -10px;
+}
+
+.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+}
 
 /*footer*/
 footer {
@@ -70,3 +101,8 @@ img.transparent {
 img.transparent:hover {
     opacity: 1;
 }
+
+.form-control::-webkit-input-placeholder { color: #3A3A3A; position: relative;}
+.form-control:-moz-placeholder { color: #3A3A3A; position: relative;}
+.form-control::-moz-placeholder { color: #3A3A3A; position: relative;}
+.form-control:-ms-input-placeholder { color: #3A3A3A; position: relative;}

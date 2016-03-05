@@ -12,7 +12,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+.btn {
     font-family: cursive;
     font-weight: 700;
 }
@@ -110,12 +112,30 @@ hr.intro-divider {
     text-decoration: none;
     float: left;
     padding-left: 10px;
+    font-size: 2em;
 }
 
 .place-desc {
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 60px;
+    margin-left: 160px;
+    font-size: 1.2em;
+    position: absolute;
+    color: #D96000;
+}
+
+.place-button {
+    background-color: #FCD913;
+    position: relative;
+    display: inline;
     float: left;
+    margin-left: 30px;
+    font-size: 1.2em;
+    color: #40BF6C
+}
+
+.place-button:hover {
+    background-color: #FD9F6C;
+    color: #40BF6C
 }
 
 /*footer*/

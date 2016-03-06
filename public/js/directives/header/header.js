@@ -1,0 +1,8 @@
+app.directive('headercontainer', function() {
+    
+    return {
+        restrict : 'E',
+        templateUrl: 'js/directives/header/header.html'
+    }
+    
+});

@@ -1,0 +1,9 @@
+API v2.0
+Consumer Key	alMKTiiNfpeDeSfAdT4cTw
+Consumer Secret	UScAsjf6itlkztPQUNB1yoZvh6c
+Token	63VcQqfEC8rdAuUq32gyhYLhooQ0SOhg
+Token Secret	WOO9N0xCcdtx-QOO0GuHs7B3fmI
+
+
+usage
+https://github.com/olalonde/node-yelp

@@ -163,3 +163,13 @@ img.transparent:hover {
 .form-control:-moz-placeholder { color: #3A3A3A; position: relative;}
 .form-control::-moz-placeholder { color: #3A3A3A; position: relative;}
 .form-control:-ms-input-placeholder { color: #3A3A3A; position: relative;}
+
+#dvLoading
+{
+   background:#000 url(../images/loading.png) no-repeat center center;
+   background-size:cover;
+   height: 100%;
+   width: 100%;
+   left: 50%;
+   top: 50%;
+}

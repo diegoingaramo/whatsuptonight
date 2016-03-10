@@ -166,10 +166,10 @@ img.transparent:hover {
 
 #dvLoading
 {
-   background:#000 url(../images/loading.png) no-repeat center center;
-   background-size:cover;
+   background:#FCD913 url(../images/loading.gif) no-repeat center center;
    height: 100%;
    width: 100%;
    left: 50%;
    top: 50%;
+   display: none;
 }

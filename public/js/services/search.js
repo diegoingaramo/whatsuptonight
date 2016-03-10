@@ -4,13 +4,13 @@ var searchService = function($http) {
     
   var self = this;
     
-  /*self.getPollsByUser = function(email) {
-      return $http.post('polls/getPollsByUser', {
-          email: email
+  self.searchLocation = function(locationText) {
+      return $http.post('location/search', {
+          locationText: locationText
       });
   };
     
-  self.new = function(poll,email) {
+  /*self.new = function(poll,email) {
       return $http.post('polls/new', {
           question: poll.question,
           options: poll.options,

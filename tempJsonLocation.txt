@@ -1,0 +1,21 @@
+categories: Array[1]
+display_phone: "+1-415-543-2355"
+id: "hrd-san-francisco-2"
+image_url: "https://s3-media4.fl.yelpcdn.com/bphoto/KEwOE6RPiGRm2H0zVHVAgA/ms.jpg"
+is_claimed: true
+is_closed: false
+location: Object
+menu_date_updated: 1457082579
+menu_provider: "eat24"
+mobile_url: "http://m.yelp.com/biz/hrd-san-francisco-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=alMKTiiNfpeDeSfAdT4cTw"
+name: "HRD"
+phone: "4155432355"
+rating: 4.5
+rating_img_url: "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png"
+rating_img_url_large: "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png"
+rating_img_url_small: "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png"
+review_count: 1777
+snippet_image_url: "http://s3-media1.fl.yelpcdn.com/photo/5ePW0JKeFp_9aeV_HAYJ5w/ms.jpg"
+snippet_text: "First time coming to this restaurant and always wanted to try kimchi fried rice burrito. It's a bit small and always a line outside. Very fast pace and the..."
+url: "http://www.yelp.com/biz/hrd-san-francisco-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=alMKTiiNfpeDeSfAdT4cTw"
+__proto__: Objec

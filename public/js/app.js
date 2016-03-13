@@ -3,7 +3,9 @@
 function AppController($scope, searchService) {
     
   $scope.locationText = "";
-  $scope.locations = [];  
+  $scope.locations = [];
+    
+  OAuth.initialize('CwgeJO-j28bHeThunMwNKDYi6C4');
     
   $scope.searchLocations = function() {
       searchService.searchLocation($scope.locationText).then(function(result) {
@@ -13,6 +15,19 @@ function AppController($scope, searchService) {
         }, function(reason) {
              bootbox.alert("Error: " + reason);
         });
+  };
+    
+  
+  $scope.goingHit = function() {
+      OAuth.popup('twitter').done(function(result) {
+        console.log(result);
+        result.me().done(function(data) {
+            console.log(data);
+        });
+      }).fail(function (error) {
+            console.error('error: ', error);
+      });
+      
   };
     
 };

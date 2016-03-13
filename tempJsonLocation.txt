@@ -19,3 +19,19 @@ snippet_image_url: "http://s3-media1.fl.yelpcdn.com/photo/5ePW0JKeFp_9aeV_HAYJ5w
 snippet_text: "First time coming to this restaurant and always wanted to try kimchi fried rice burrito. It's a bit small and always a line outside. Very fast pace and the..."
 url: "http://www.yelp.com/biz/hrd-san-francisco-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=alMKTiiNfpeDeSfAdT4cTw"
 __proto__: Objec
+
+
+--- twitter data ---
+
+alias: "Ingaramo"
+avatar: "https://pbs.twimg.com/profile_images/499584441304379392/CdU7B40z_normal.jpeg"
+bio: "Interested in the field of Artificial Intelligence, Natural Language Processing and technologies that support them. Will Ferrell and Marc Maron fan."
+id: "73314138"
+language: "es"
+location: ""
+name: "Diego"
+raw: Object
+timezone: null
+url: "https://twitter.com/Ingaramo"
+website: null
+__proto__: Object

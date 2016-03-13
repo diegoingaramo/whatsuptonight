@@ -2,8 +2,8 @@
     <row ng-repeat="location in locations">
         <div class="col-lg-offset-1 col-lg-10">
             <div class="place-container">
-                <img class="img-rounded place-image" src="{{location.image_url}}" />
-                <a class="place-title" href="{{location.url}}" target="_blank">{{location.name}}</a> <a class="btn btn-default place-button">0 Going</a>
+                <img class="img-rounded place-image" ng-src="{{location.image_url}}" />
+                <a class="place-title" href="{{location.url}}" target="_blank">{{location.name}}</a> <a class="btn btn-default place-button" ng-click="goingHit()">0 Going</a>
                 <p class="place-desc"><i>{{location.snippet_text}}</i></p>
             </div>
         </div>

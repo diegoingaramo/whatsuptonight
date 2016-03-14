@@ -12,14 +12,13 @@ function AppController($scope, searchService, authenticationService) {
   }
     
   $scope.searchLocations = function() {
-      $scope.goingHit();
-      /*searchService.searchLocation($scope.locationText).then(function(result) {
+      searchService.searchLocation($scope.locationText).then(function(result) {
             if (result.data.success){
-                $scope.locations = result.data.locations;            
+                $scope.locations = result.data.locations;
             }            
         }, function(reason) {
              bootbox.alert("Error: " + reason);
-        });*/
+        });
   };
     
   $scope.searchLocationsKeyPress = function(keyEvent){

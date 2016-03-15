@@ -14,6 +14,7 @@ var searchService = function($http) {
 
 /* End Search Service */
 
+/* Authentication Service */
 
 var authenticationService = function($window) {
     
@@ -24,16 +25,22 @@ var authenticationService = function($window) {
   };
     
   self.login = function() {
-      OAuth.popup('twitter').done(function(result) {
-        console.log(result);
-        result.me().done(function(data) {
-            //console.log(data);
-            $window.localStorage.setItem('user',JSON.stringify({alias: data.alias}));
-        });
-      }).fail(function (error) {
-            console.error('error: ', error);
+    return new Promise(function(resolve, reject){
+        if (!self.isAuthed()){
+          OAuth.popup('twitter').done(function(result) {
+            result.me().done(function(data) {
+                $window.localStorage.setItem('user',JSON.stringify({alias: data.alias}));
+                resolve();
+            });
+          }).fail(function (error) {
+                console.error('error: ', error);
+                reject();
+          });
+        }
+        resolve();
       });
   };
+                       
     
   self.isAuthed = function() {
       return $window.localStorage.getItem('user');
@@ -48,7 +55,27 @@ var authenticationService = function($window) {
     
 };
 
+/* End Authentication Service */
+
+
+/* Location Service */
+
+var locationService = function($http) {
+    
+  var self = this;
+    
+  self.goingHit = function(locationID,alias) {
+      return $http.post('location/hit', {
+          locID: locationID,
+          alias: alias
+      });
+  };
+    
+};
+
+/* End Location Service */
 
 
 app.service('searchService', searchService);
 app.service('authenticationService', authenticationService);
+app.service('locationService', locationService);

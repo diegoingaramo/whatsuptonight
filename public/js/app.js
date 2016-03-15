@@ -1,6 +1,6 @@
 /* Main controller definition */
 
-function AppController($scope, searchService, authenticationService) {
+function AppController($scope, searchService, authenticationService,locationService) {
     
   var self = this;
     
@@ -27,10 +27,16 @@ function AppController($scope, searchService, authenticationService) {
   };
     
   
-  $scope.goingHit = function() {
-     if (!authenticationService.isAuthed()){
-           authenticationService.login();     
-     }
+  $scope.goingHit = function(location) {
+      authenticationService.login().then(function(){
+          locationService.goingHit(location.id,authenticationService.currentUser.alias).then(function(result) {
+            if (result.data.success){
+                location.going = result.data.location.going;
+            }            
+        }, function(reason) {
+             bootbox.alert("Error: " + reason);
+        });
+      });     
   };
     
   $scope.init();
@@ -39,7 +45,7 @@ function AppController($scope, searchService, authenticationService) {
 
 /* End main controller definition */
 
-var app = angular.module('mainModule', []).controller('AppController', ['$scope','searchService','authenticationService', AppController]);
+var app = angular.module('mainModule', []).controller('AppController', ['$scope','searchService','authenticationService','locationService', AppController]);
 
 
 app.config(function($httpProvider){

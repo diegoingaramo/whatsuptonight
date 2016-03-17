@@ -36,8 +36,9 @@ var authenticationService = function($window) {
                 console.error('error: ', error);
                 reject();
           });
+        }else {
+            resolve();
         }
-        resolve();
       });
   };
                        

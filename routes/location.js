@@ -70,13 +70,13 @@ router.post('/hit', function(req, res) {
         if (!location){
             location = new Location({locID: locID, going: []});
         }
-            
+        
         if (location.going.indexOf(alias) == -1){
             location.going.push(alias);
         }else{
             location.going.splice(location.going.indexOf(alias), 1);
         }
-            
+        
         location.save(function (err) {
             if (err) return res
                    .status(200)

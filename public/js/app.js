@@ -29,7 +29,7 @@ function AppController($scope, searchService, authenticationService,locationServ
   
   $scope.goingHit = function(location) {
       authenticationService.login().then(function(){
-          locationService.goingHit(location.id,authenticationService.currentUser.alias).then(function(result) {
+          locationService.goingHit(location.id,authenticationService.currentUser().alias).then(function(result) {
             if (result.data.success){
                 location.going = result.data.location.going;
             }            
